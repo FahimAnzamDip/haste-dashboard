@@ -68,7 +68,6 @@
         }
 
         &[data-bs-toggle='collapse'][aria-expanded='true'] .link-arrow {
-            @include transform(rotate(90deg));
             transition: $transition-base;
         }
     }

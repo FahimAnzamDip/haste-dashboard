@@ -13,17 +13,20 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/vite.svg" type="image/x-icon">
+
+    <!-- Main JS -->
+    <script type="module" src="/assets/js/main.js"></script>
 </head>
 
 <body>
     <!-- Sidebar Menu Start -->
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
         <!-- Toggled Logo Start -->
-        <a class="navbar-brand me-lg-5" href="index.html">
+        <a class="navbar-brand me-lg-5" href="/index.html">
             <!-- dark -->
-            <img class="navbar-brand-dark" src="/vite.svg" alt="Volt logo" />
+            <img class="navbar-brand-dark" src="/vite.svg" alt="Vite logo" />
             <!-- light -->
-            <img class="navbar-brand-light" src="/vite.svg" alt="Volt logo" />
+            <img class="navbar-brand-light" src="/vite.svg" alt="Vite logo" />
         </a>
         <!-- Toggled Logo End -->
         <!-- Siderbar Toggler Start -->
@@ -73,9 +76,9 @@
             <ul class="nav flex-column pt-3 pt-md-0">
                 <!-- Logo Start -->
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link d-flex align-items-center">
+                    <a href="/index.html" class="nav-link d-flex align-items-center">
                         <span class="sidebar-icon d-flex align-items-center">
-                            <img src="/vite.svg" height="20" width="20" alt="Volt Logo">
+                            <img src="/vite.svg" height="20" width="20" alt="Vite Logo">
                         </span>
                         <span class="sidebar-text text-secondary">Haste Dashboard</span>
                     </a>
@@ -86,7 +89,7 @@
 
                 <!-- Menu Start -->
                 <li class="nav-item">
-                    <a href="../index.html" class="nav-link d-flex align-items-center">
+                    <a href="/index.html" class="nav-link d-flex align-items-center">
                         <span class="sidebar-icon d-flex align-items-center">
                             <i class="bi bi-bounding-box"></i>
                         </span>
@@ -142,7 +145,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <span class="nav-link collapsed d-flex justify-content-between align-items-center"
+                    <span  id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
                         data-bs-toggle="collapse" data-bs-target="#submenu-pages">
                         <span class="d-flex align-items-center">
                             <span class="sidebar-icon d-flex align-items-center">
@@ -359,11 +362,12 @@
         </nav>
 
         <!-- Page Content Start -->
+        <!-- Breadcrumb Start -->
         <div class="pb-4">
             <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
                 <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
                     <li class="breadcrumb-item">
-                        <a href="../index.html">
+                        <a href="/index.html">
                             <i class="bi bi-house-door-fill text-tertiary"></i>
                         </a>
                     </li>
@@ -378,7 +382,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- Breadcrumb End -->
         <div class="row">
             <div class="col-12">
                 <div class="card border-light shadow-sm components-section">
@@ -745,9 +749,6 @@
         <!-- Footer End -->
     </main>
     <!-- Main Content End -->
-
-    <!-- Main JS -->
-    <script type="module" src="../js/main.js"></script>
 </body>
 
 </html>
