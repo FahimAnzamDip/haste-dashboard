@@ -27,7 +27,7 @@
         &.active {
             & > .nav-link {
                 color: $gray-100;
-                background-color: $gray-700;
+                background: linear-gradient(to bottom, $gray-700, $gray-600);
                 border-right: 4px solid $secondary;
             }
         }
@@ -61,13 +61,13 @@
 
         .link-arrow {
             font-size: $font-size-sm;
-            
+
             .icon {
                 color: $secondary;
             }
         }
 
-        &[data-bs-toggle="collapse"][aria-expanded="true"] .link-arrow {
+        &[data-bs-toggle='collapse'][aria-expanded='true'] .link-arrow {
             @include transform(rotate(90deg));
             transition: $transition-base;
         }
@@ -193,14 +193,14 @@
 .sidebar {
     &.contracted {
         .multi-level {
-        .nav-item {
-            .nav-link {
-                &::before {
-                    display: none;
+            .nav-item {
+                .nav-link {
+                    &::before {
+                        display: none;
+                    }
                 }
             }
         }
-    }
     }
     .multi-level {
         .nav-item {
@@ -208,13 +208,29 @@
                 &::before {
                     background-color: $secondary;
                     border-radius: 50%;
-                    content: "";
+                    content: '';
                     display: inline-block;
                     height: 7px;
                     margin: 2px 14px;
                     width: 7px;
                 }
             }
+        }
+    }
+}
+
+.nav-link {
+    .link-arrow {
+        .icon {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.nav-link.collapsed {
+    .link-arrow {
+        .icon {
+            transform: rotate(0deg);
         }
     }
 }

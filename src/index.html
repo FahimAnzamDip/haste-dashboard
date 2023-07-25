@@ -18,10 +18,15 @@
 <body>
     <!-- Sidebar Menu Start -->
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+        <!-- Toggled Logo Start -->
         <a class="navbar-brand me-lg-5" href="index.html">
+            <!-- dark -->
             <img class="navbar-brand-dark" src="/vite.svg" alt="Volt logo" />
+            <!-- light -->
             <img class="navbar-brand-light" src="/vite.svg" alt="Volt logo" />
         </a>
+        <!-- Toggled Logo End -->
+        <!-- Siderbar Toggler Start -->
         <div class="d-flex align-items-center">
             <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
@@ -29,20 +34,22 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
+        <!-- Sidebar Toggler End -->
     </nav>
 
     <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse simplebar-scrollable-y"
         data-simplebar>
         <div class="sidebar-inner px-4 pt-3">
+            <!-- Mobile Nav Top Start -->
             <div
                 class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
                 <div class="d-flex align-items-center">
                     <div class="avatar-lg me-4">
-                        <img src="/images/team/profile-picture-3.jpg"
+                        <img src="https://www.gravatar.com/avatar/205e46048aec07710c08d50"
                             class="card-img-top rounded-circle border-white" alt="Bonnie Green">
                     </div>
                     <div class="d-block">
-                        <h2 class="h5 mb-3">Hi, Fahim</h2>
+                        <h2 class="h5 mb-3">Hi, Administrator</h2>
                         <a href="./pages/sign-in.html"
                             class="btn btn-secondary btn-sm d-inline-flex align-items-center">
                             <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -58,35 +65,162 @@
                 <div class="collapse-close d-md-none">
                     <a href="#sidebarMenu" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
                         aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
-                        <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
+                        <i class="bi bi-x fs-2"></i>
                     </a>
                 </div>
             </div>
+            <!-- Mobile Nav Top End -->
             <ul class="nav flex-column pt-3 pt-md-0">
+                <!-- Logo Start -->
                 <li class="nav-item">
                     <a href="index.html" class="nav-link d-flex align-items-center">
                         <span class="sidebar-icon d-flex align-items-center">
                             <img src="/vite.svg" height="20" width="20" alt="Volt Logo">
                         </span>
-                        <span class="sidebar-text fw-light text-muted">Haste Dashboard</span>
+                        <span class="sidebar-text text-secondary">Haste Dashboard</span>
                     </a>
                 </li>
+                <!-- Logo End -->
 
                 <li role="separator" class="dropdown-divider mb-4 border-gray-700"></li>
 
+                <!-- Menu Start -->
                 <li class="nav-item active">
                     <a href="index.html" class="nav-link d-flex align-items-center">
                         <span class="sidebar-icon d-flex align-items-center">
-                            <i class="bi bi-pie-chart-fill text-secondary"></i>
+                            <i class="bi bi-bounding-box"></i>
                         </span>
                         <span class="sidebar-text d-inline-block">Home</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <span
+                        class="nav-link collapsed d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components">
+                        <span class="d-flex align-items-center">
+                            <span class="sidebar-icon d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-box2-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6l.5.667Z" />
+                                </svg>
+                            </span>
+                            <span class="sidebar-text d-inline-block">Components</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse" role="list"
+                        id="submenu-components" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/buttons.html">
+                                    <span class="sidebar-text">Buttons</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href=".pages/notifications.html">
+                                    <span class="sidebar-text">Notifications</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/forms.html">
+                                    <span class="sidebar-text">Forms</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/modals.html">
+                                    <span class="sidebar-text">Modals</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/typography.html">
+                                    <span class="sidebar-text">Typography</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link collapsed d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-pages">
+                        <span class="d-flex align-items-center">
+                            <span class="sidebar-icon d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-newspaper icon icon-xs" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z" />
+                                    <path
+                                        d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+                                </svg>
+                            </span>
+                            <span class="sidebar-text d-inline-block">Page examples</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse" role="list" id="submenu-pages" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/sign-in.html">
+                                    <span class="sidebar-text">Sign In</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/sign-up.html">
+                                    <span class="sidebar-text">Sign Up</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/forgot-password.html">
+                                    <span class="sidebar-text">Forgot password</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/reset-password.html">
+                                    <span class="sidebar-text">Reset password</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/lock.html">
+                                    <span class="sidebar-text">Lock</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/404.html">
+                                    <span class="sidebar-text">404 Not Found</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/500.html">
+                                    <span class="sidebar-text">500 Not Found</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" href="https://icons.getbootstrap.com/"
+                        class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon d-flex align-items-center">
+                            <i class="bi bi-boxes"></i>
+                        </span>
+                        <span class="sidebar-text d-inline-block">Font Icons</span>
+                    </a>
+                </li>
+                <!-- Menu End -->
             </ul>
         </div>
     </nav>
@@ -100,28 +234,30 @@
                 <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
                     <div class="d-flex align-items-center">
                         <!-- Toggle Button -->
-                        <button id="sidebar-toggle" class="sidebar-toggle me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
+                        <button id="sidebar-toggle"
+                            class="sidebar-toggle me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
                             <i class="bi bi-list fs-3"></i>
                         </button>
-                        <!-- Search form -->
+                        <!-- Search form Start -->
                         <form class="navbar-search form-inline" id="navbar-search-main">
                             <div class="input-group input-group-merge search-bar">
                                 <span class="input-group-text" id="topbar-addon">
-                                <i class="bi bi-search"></i>    
+                                    <i class="bi bi-search"></i>
                                 </span>
                                 <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search"
                                     aria-label="Search" aria-describedby="topbar-addon">
                             </div>
                         </form>
-                        <!-- / Search form -->
+                        <!-- Search form End -->
                     </div>
                     <!-- Navbar links -->
+                    <!-- Notification Start -->
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item dropdown">
                             <a class="nav-link text-dark notification-bell unread dropdown-toggle"
                                 data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown"
                                 data-bs-display="static" aria-expanded="false">
-                                <svg class="icon icon-sm text-gray-900" fill="currentColor" viewBox="0 0 20 20"
+                                <svg class="icon icon-sm text-gray-600" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
@@ -223,17 +359,20 @@
                             </div>
                         </li>
                     </ul>
+                    <!-- Notification End -->
                 </div>
             </div>
         </nav>
         <!-- Topbar End -->
+
+        <!-- Page Content Start -->
         <div class="row">
             <!-- Chart Start -->
             <div class="col-12 mb-4">
                 <div class="card bg-yellow-100 border-0 shadow">
                     <div class="card-header d-sm-flex flex-row align-items-center flex-0">
                         <div class="d-block mb-3 mb-sm-0">
-                            <div class="fs-5 fw-normal mb-2">Sales Value</div>
+                            <div class="fs-5 fw-normal mb-2">Sales Revenue</div>
                             <h2 class="fs-3 fw-extrabold">$10,567</h2>
                             <div class="small mt-2">
                                 <span class="fw-normal me-2">Yesterday</span>
@@ -247,7 +386,7 @@
                         </div>
                     </div>
                     <div class="card-body p-2">
-                        <div class="ct-chart-sales-value ct-double-octave ct-series-g"></div>
+                        <canvas id="revenueChart" height="400"></canvas>
                     </div>
                 </div>
             </div>
@@ -810,7 +949,7 @@
                             </div>
                         </div>
                         <div class="card-body p-2">
-                            <div class="ct-chart-ranking ct-golden-section ct-series-a"></div>
+                            <canvas id="orderChart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -952,13 +1091,25 @@
                 </div>
             </div>
         </div>
+        <!-- Page Content End -->
+
+        <!-- Footer Start -->
         <footer class="bg-white rounded shadow py-3 px-3 mb-3 mt-4">
             <div class="row">
-                <div class="col-12 text-center">
-                    <p class="mb-0">© <span class="current-year"></span> - Made by <a href="https://github.com/FahimAnzamDip">Fahim</a></p>
+                <div class="col-12 d-md-flex justify-content-between">
+                    <div>
+                        <p class="mb-0">© <span class="current-year"></span> - Made with <i
+                                class="bi bi-heart-fill text-danger"></i> by <a
+                                href="https://github.com/FahimAnzamDip">Fahim Anzam Dip</a>
+                        </p>
+                    </div>
+                    <div>
+                        version: <span class="text-tertiary fw-bold">1.0.0</span>
+                    </div>
                 </div>
             </div>
         </footer>
+        <!-- Footer End -->
     </main>
     <!-- Main Content End -->
 

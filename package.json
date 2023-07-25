@@ -16,6 +16,7 @@
     "dependencies": {
         "bootstrap": "^5.3.0",
         "bootstrap-icons": "^1.10.5",
+        "chart.js": "^4.3.1",
         "simplebar": "^5.3.4"
     }
 }
