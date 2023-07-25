@@ -19,8 +19,8 @@
     <!-- Sidebar Menu Start -->
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
         <a class="navbar-brand me-lg-5" href="index.html">
-            <img class="navbar-brand-dark" src="/images/brand/light.svg" alt="Volt logo" />
-            <img class="navbar-brand-light" src="/images/brand/dark.svg" alt="Volt logo" />
+            <img class="navbar-brand-dark" src="/vite.svg" alt="Volt logo" />
+            <img class="navbar-brand-light" src="/vite.svg" alt="Volt logo" />
         </a>
         <div class="d-flex align-items-center">
             <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
@@ -70,10 +70,10 @@
             <ul class="nav flex-column pt-3 pt-md-0">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link d-flex align-items-center">
-                        <span class="sidebar-icon">
-                            <img src="/images/brand/light.svg" height="20" width="20" alt="Volt Logo">
+                        <span class="sidebar-icon d-flex align-items-center">
+                            <img src="/vite.svg" height="20" width="20" alt="Volt Logo">
                         </span>
-                        <span class="sidebar-text fw-bold text-muted">Admin Dashboard</span>
+                        <span class="sidebar-text fw-light text-muted">Haste Dashboard</span>
                     </a>
                 </li>
 
@@ -100,25 +100,14 @@
                 <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
                     <div class="d-flex align-items-center">
                         <!-- Toggle Button -->
-                        <button id="sidebar-toggle"
-                            class="sidebar-toggle me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center"><svg
-                                class="toggle-icon" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"></path>
-                            </svg></button>
+                        <button id="sidebar-toggle" class="sidebar-toggle me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
+                            <i class="bi bi-list fs-3"></i>
+                        </button>
                         <!-- Search form -->
                         <form class="navbar-search form-inline" id="navbar-search-main">
                             <div class="input-group input-group-merge search-bar">
                                 <span class="input-group-text" id="topbar-addon">
-                                    <svg class="icon icon-xs" x-description="Heroicon name: solid/search"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                        aria-hidden="true">
-                                        <path fill-rule="evenodd"
-                                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
+                                <i class="bi bi-search"></i>    
                                 </span>
                                 <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search"
                                     aria-label="Search" aria-describedby="topbar-addon">
@@ -148,7 +137,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="/images/team/profile-picture-4.jpg"
+                                                    src="https://www.gravatar.com/avatar/205e46048aec07710c08d50"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
