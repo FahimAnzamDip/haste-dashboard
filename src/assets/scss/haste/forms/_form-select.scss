@@ -1,12 +1,16 @@
 .form-select {
-    .form-select-lg{
-        padding: $form-select-padding-y ($form-select-padding-x + $form-select-indicator-padding) $form-select-padding-y $form-select-padding-x;
+    padding: 0.7rem 1rem;
+    font-size: 0.945rem;
+    .form-select-lg {
+        padding: $form-select-padding-y
+            ($form-select-padding-x + $form-select-indicator-padding)
+            $form-select-padding-y $form-select-padding-x;
     }
 }
 
 //Add File Alternative Style
 
-.file-field input[type="file"] {
+.file-field input[type='file'] {
     max-width: 230px;
     position: absolute;
     cursor: pointer;

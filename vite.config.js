@@ -10,4 +10,5 @@ export default {
     server: {
         port: 3030,
     },
+    plugins: [],
 };

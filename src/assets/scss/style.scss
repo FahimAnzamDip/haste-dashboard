@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 // update variables here
 @import "custom/variables";
 
@@ -7,7 +5,7 @@
 @import "haste/variables";
 
 // Third party
-@import "bootstrap-icons/font/bootstrap-icons.css";
+@import 'vanillajs-datepicker/sass/datepicker-bs5';
 
 // Bootstrap
 @import "bootstrap/scss/variables";
@@ -47,7 +45,6 @@
 @import "bootstrap/scss/modal";
 @import "bootstrap/scss/tooltip";
 @import "bootstrap/scss/popover";
-@import "bootstrap/scss/carousel";
 @import "bootstrap/scss/spinners";
 
 // Helpers
@@ -69,6 +66,9 @@
 
 // Forms
 @import "haste/forms";
+
+// Choices.js CSS
+@import "custom/choice.js";
 
 // write your custom styles here!
 html {

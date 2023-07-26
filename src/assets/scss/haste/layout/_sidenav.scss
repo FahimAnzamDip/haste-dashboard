@@ -28,9 +28,17 @@
         &.active {
             & > .nav-link {
                 color: $gray-100;
-                background: linear-gradient(to bottom right, $gray-700, $gray-600, $gray-700);
+                background: linear-gradient(
+                    to bottom right,
+                    $gray-700,
+                    $gray-600,
+                    $gray-700
+                );
                 backdrop-filter: blur(10px);
                 border-right: 4px solid $secondary;
+                .sidebar-icon {
+                    color: $secondary;
+                }
             }
         }
         .nav-link {
