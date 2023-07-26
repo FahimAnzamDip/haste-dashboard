@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.sidebar {
+    .app-logo {
+        display: block;
+    }
+    .contracted-app-logo {
+        display: none;
+    }
+}
+
+.sidebar.contracted {
+    .app-logo {
+        display: none;
+    }
+    .contracted-app-logo {
+        display: block;
+        margin-right: 145px;
+    }
+}
