@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <div class="position-fixed bg-primary bg-pattern-1 w-100 fmxh-300"></div>
     <!-- Sidebar Menu Start -->
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
         <!-- Toggled Logo Start -->
@@ -40,7 +41,7 @@
         <!-- Sidebar Toggler End -->
     </nav>
 
-    <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse simplebar-scrollable-y"
+    <nav id="sidebarMenu" class="sidebar d-lg-block text-white collapse simplebar-scrollable-y m-md-3 rounded shadow"
         data-simplebar>
         <div class="sidebar-inner px-4 pt-3">
             <!-- Mobile Nav Top Start -->
@@ -80,7 +81,7 @@
                         <span class="sidebar-icon d-flex align-items-center">
                             <img src="/vite.svg" height="20" width="20" alt="Vite Logo">
                         </span>
-                        <span class="sidebar-text text-secondary">Haste Dashboard</span>
+                        <span class="sidebar-text text-muted fw-light">Haste Dashboard</span>
                     </a>
                 </li>
                 <!-- Logo End -->
@@ -97,8 +98,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <span id="hasArrow"
-                        class="nav-link collapsed d-flex justify-content-between align-items-center"
+                    <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
                         data-bs-toggle="collapse" data-bs-target="#submenu-components">
                         <span class="d-flex align-items-center">
                             <span class="sidebar-icon d-flex align-items-center">
@@ -115,11 +115,11 @@
                             </svg>
                         </span>
                     </span>
-                    <div class="multi-level collapse" role="list"
-                        id="submenu-components" aria-expanded="false">
+                    <div class="multi-level collapse" role="list" id="submenu-components" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li id="subMenuLink" class="nav-item">
                                 <a class="nav-link" href="./pages/components/buttons.html">
+                                    <span class="sidebar-text-contracted">B</span>
                                     <span class="sidebar-text">Buttons</span>
                                 </a>
                             </li>
@@ -147,7 +147,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <span  id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
+                    <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
                         data-bs-toggle="collapse" data-bs-target="#submenu-pages">
                         <span class="d-flex align-items-center">
                             <span class="sidebar-icon d-flex align-items-center">
@@ -228,137 +228,107 @@
     <!-- Main Content Start -->
     <main class="content">
         <!-- Topbar Start -->
-        <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark px-3 bg-white mt-3 py-2 mb-4">
+        <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark px-3 bg-white mt-3 py-2 mb-4 shadow">
             <div class="container-fluid px-0">
                 <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
                     <div class="d-flex align-items-center">
                         <!-- Toggle Button -->
                         <button id="sidebar-toggle"
-                            class="sidebar-toggle me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
+                            class="sidebar-toggle bg-gray-100 shadow me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
                             <i class="bi bi-list fs-3"></i>
                         </button>
-                        <!-- Search form Start -->
-                        <form class="navbar-search form-inline" id="navbar-search-main">
-                            <div class="input-group input-group-merge search-bar">
-                                <span class="input-group-text" id="topbar-addon">
-                                    <i class="bi bi-search"></i>
-                                </span>
-                                <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search"
-                                    aria-label="Search" aria-describedby="topbar-addon">
-                            </div>
-                        </form>
-                        <!-- Search form End -->
                     </div>
                     <!-- Navbar links -->
                     <!-- Notification Start -->
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark notification-bell unread dropdown-toggle"
-                                data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown"
-                                data-bs-display="static" aria-expanded="false">
-                                <svg class="icon icon-sm text-gray-600" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0">
-                                <div class="list-group list-group-flush">
-                                    <a href="#"
-                                        class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
-                                    <a href="#" class="list-group-item list-group-item-action border-bottom">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <!-- Avatar -->
-                                                <img alt="Image placeholder"
-                                                    src="https://www.gravatar.com/avatar/205e46048aec07710c08d50"
-                                                    class="avatar-md rounded">
-                                            </div>
-                                            <div class="col ps-0 ms-2">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h4 class="h6 mb-0 text-small">Joseph Garth</h4>
-                                                    </div>
-                                                    <div class="text-end">
-                                                        <small>1 d ago</small>
-                                                    </div>
-                                                </div>
-                                                <p class="font-small mt-1 mb-0">New message: "Hey, what's up? All set
-                                                    for the presentation?"</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="list-group-item list-group-item-action border-bottom">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <!-- Avatar -->
-                                                <img alt="Image placeholder"
-                                                    src="https://www.gravatar.com/avatar/205e46048aec07710c08d50"
-                                                    class="avatar-md rounded">
-                                            </div>
-                                            <div class="col ps-0 ms-2">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h4 class="h6 mb-0 text-small">Bonnie Green</h4>
-                                                    </div>
-                                                    <div class="text-end">
-                                                        <small>2 hrs ago</small>
-                                                    </div>
-                                                </div>
-                                                <p class="font-small mt-1 mb-0">New message: "We need to improve the
-                                                    UI/UX for the landing page."</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
-                                        <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                                            <path fill-rule="evenodd"
-                                                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        View all
-                                    </a>
-                                </div>
+                    <div class="d-flex align-items-center">
+                        <!-- Search form Start -->
+                        <form class="navbar-search form-inline d-none d-md-block" id="navbar-search-main">
+                            <div class="input-group input-group-merge search-bar">
+                                <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search"
+                                    aria-label="Search" aria-describedby="topbar-addon">
+                                <span class="input-group-text" id="topbar-addon">
+                                    <i class="bi bi-search"></i>
+                                </span>
                             </div>
-                        </li>
-                        <li class="nav-item dropdown ms-lg-3">
-                            <a class="nav-link dropdown-toggle pt-1 px-0" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="media d-flex align-items-center">
-                                    <img class="avatar rounded-circle" alt="Image placeholder"
-                                        src="https://www.gravatar.com/avatar/205e46048aec07710c08d50">
-                                    <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
-                                        <span class="mb-0 font-small fw-bolder text-gray-900">Administrator</span>
-                                        <span class="text-success">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </form>
+                        <!-- Search form End -->
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark notification-bell unread dropdown-toggle"
+                                    data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown"
+                                    data-bs-display="static" aria-expanded="false">
+                                    <svg class="icon icon-sm text-gray-600" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0">
+                                    <div class="list-group list-group-flush">
+                                        <a href="#"
+                                            class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
+                                        <a href="#" class="list-group-item list-group-item-action border-bottom">
+                                            <div class="row align-items-center justify-content-center">
+                                                1. Design here however you want ;)
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action border-bottom">
+                                            <div class="row align-items-center justify-content-center">
+                                                2. Design here however you want ;)
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
+                                            <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                <path fill-rule="evenodd"
+                                                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                                                    clip-rule="evenodd"></path>
                                             </svg>
-                                        </span>
+                                            View all
+                                        </a>
                                     </div>
                                 </div>
-                            </a>
-                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <i class="bi bi-person-circle fs-5 text-muted me-2"></i>
-                                    My Profile
+                            </li>
+                            <li class="nav-item dropdown ms-lg-3">
+                                <a class="nav-link dropdown-toggle pt-2 px-0 bg-gray-100 px-3 blur-5 rounded shadow"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="media d-flex align-items-center">
+                                        <img class="avatar rounded-circle border-2 border-primary" alt="User Image"
+                                            src="https://www.gravatar.com/avatar/205e46048aec07710c08d50">
+                                        <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
+                                            <span class="mb-0 font-small fw-bolder text-gray-900">Administrator</span>
+                                            <span class="text-success">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-caret-down-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <i class="bi bi-gear fs-5 text-muted me-2"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <i class="bi bi-box-arrow-right fs-5 text-danger me-2"></i>
-                                    Logout
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Notification End -->
+                                <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <i class="bi bi-person-circle fs-5 text-muted me-2"></i>
+                                        My Profile
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <i class="bi bi-gear fs-5 text-muted me-2"></i>
+                                        Settings
+                                    </a>
+                                    <div role="separator" class="dropdown-divider my-1 border-gray-200"></div>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <i class="bi bi-box-arrow-right fs-5 text-danger me-2"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Notification End -->
+                    </div>
                 </div>
             </div>
         </nav>
@@ -372,11 +342,11 @@
                     <div class="card-header d-sm-flex flex-row align-items-center flex-0">
                         <div class="d-block mb-3 mb-sm-0">
                             <div class="fs-5 fw-normal mb-2">Sales Revenue</div>
-                            <h2 class="fs-3 fw-extrabold">$10,567</h2>
+                            <h2 class="fs-3 fw-extrabold">$20,567</h2>
                             <div class="small mt-2">
                                 <span class="fw-normal me-2">Yesterday</span>
                                 <span class="fas fa-angle-up text-success"></span>
-                                <span class="text-success fw-bold">10.57%</span>
+                                <span class="text-success fw-bold">21.57%</span>
                             </div>
                         </div>
                         <div class="d-flex ms-auto">
@@ -922,6 +892,76 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <div class="card border-0 shadow">
+                            <div class="card-header border-bottom">
+                                <h2 class="fs-5 fw-bold mb-1">Events</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="row align-items-center d-block d-sm-flex border-bottom pb-4 mb-4">
+                                    <div class="col-auto mb-3 mb-sm-0">
+                                        <div class="calendar d-flex"><span class="calendar-month">Aug</span><span
+                                                class="calendar-day py-2">10</span></div>
+                                    </div>
+                                    <div class="col"><a href="../calendar.html">
+                                            <h3 class="h5 mb-1">Newmarket Nights</h3>
+                                        </a><span>Organized by <a href="#">University of Oxford</a></span>
+                                        <div class="small fw-bold">Time: 6:00AM</div><span class="small fw-bold">Place:
+                                            Cambridge Boat Club,
+                                            Cambridge</span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center d-block d-sm-flex border-bottom pb-4 mb-4">
+                                    <div class="col-auto mb-3 mb-sm-0">
+                                        <div class="calendar d-flex"><span class="calendar-month">Sep</span><span
+                                                class="calendar-day py-2">12</span></div>
+                                    </div>
+                                    <div class="col"><a href="../calendar.html">
+                                            <h3 class="h5 mb-1">Noco Hemp Expo</h3>
+                                        </a><span>Organized by <a href="#">University of Oxford</a></span>
+                                        <div class="small fw-bold">Thu, 12 Sep - Sat, 18 Sep 2020</div><span
+                                            class="small fw-bold">Place:
+                                            Denver Expo Club, USA</span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center d-block d-sm-flex border-bottom pb-4 mb-4">
+                                    <div class="col-auto mb-3 mb-sm-0">
+                                        <div class="calendar d-flex"><span class="calendar-month">Sep</span><span
+                                                class="calendar-day py-2">15</span></div>
+                                    </div>
+                                    <div class="col"><a href="../calendar.html">
+                                            <h3 class="h5 mb-1">EmTech MIT Conference</h3>
+                                        </a><span>Organized by <a href="#">MIT</a></span>
+                                        <div class="small fw-bold">Thu, 12 Sep - Sat, 18 Sep 2020</div><span
+                                            class="small fw-bold">Place:
+                                            California, USA</span>
+                                    </div>
+                                </div>
+                                <div class="row d-block d-sm-flex align-items-center">
+                                    <div class="col-auto mb-3 mb-sm-0">
+                                        <div class="calendar d-flex"><span class="calendar-month">Sep</span><span
+                                                class="calendar-day py-2">28</span></div>
+                                    </div>
+                                    <div class="col"><a href="../calendar.html">
+                                            <h3 class="h5 mb-1">Canadian National Exhibition (CNE)</h3>
+                                        </a><span>Organized by <a href="#">University of Oxford</a></span>
+                                        <div class="small fw-bold">Fri, 20 Sep - Mon, 07 Oct 2020</div><span
+                                            class="small fw-bold">Place:
+                                            Toronto , Canada</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top bg-gray-50"><a
+                                    class="fw-bold d-flex align-items-center justify-content-center"
+                                    href="../calendar.html"><svg class="icon icon-xs me-2" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                        <path fill-rule="evenodd"
+                                            d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg> See all</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-xl-4">
@@ -1051,7 +1091,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 px-0">
+                <div class="col-12 px-0 mb-4">
                     <div class="card border-0 shadow">
                         <div class="card-body">
                             <h2 class="fs-5 fw-bold mb-1">Acquisition</h2>
@@ -1082,6 +1122,145 @@
                                     <div class="d-block">
                                         <label class="mb-0">Sessions</label>
                                         <h4 class="mb-0">9,567</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card notification-card border-0 shadow">
+                        <div class="card-header d-flex align-items-center">
+                            <h2 class="fs-5 fw-bold mb-0">Notifications</h2>
+                            <div class="ms-auto"><a class="fw-normal d-inline-flex align-items-center" href="#"><svg
+                                        class="icon icon-xxs me-2" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                        <path fill-rule="evenodd"
+                                            d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg> View all</a></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush list-group-timeline" style="height: 400px;overflow: hidden;overflow-y: scroll;">
+                                <div class="list-group-item border-0">
+                                    <div class="row ps-lg-1">
+                                        <div class="col-auto">
+                                            <div class="icon-shape icon-xs icon-shape-purple rounded"><svg
+                                                    fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                        <div class="col ms-n2 mb-3">
+                                            <h3 class="fs-6 fw-bold mb-1">You sold an item</h3>
+                                            <p class="mb-1">Bonnie Green just purchased "Volt - Admin Dashboard"!</p>
+                                            <div class="d-flex align-items-center"><svg
+                                                    class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg> <span class="small">1 minute ago</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item border-0">
+                                    <div class="row ps-lg-1">
+                                        <div class="col-auto">
+                                            <div class="icon-shape icon-xs icon-shape-primary rounded"><svg
+                                                    fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg></div>
+                                        </div>
+                                        <div class="col ms-n2 mb-3">
+                                            <h3 class="fs-6 fw-bold mb-1">New message</h3>
+                                            <p class="mb-1">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                                            <div class="d-flex align-items-center"><svg
+                                                    class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg> <span class="small">8 minutes ago</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item border-0">
+                                    <div class="row ps-lg-1">
+                                        <div class="col-auto">
+                                            <div class="icon-shape icon-xs icon-shape-warning rounded"><svg
+                                                    fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg></div>
+                                        </div>
+                                        <div class="col ms-n2 mb-3">
+                                            <h3 class="fs-6 fw-bold mb-1">Product issue</h3>
+                                            <p class="mb-0">A new issue has been reported for Pixel Pro.</p>
+                                            <div class="d-flex align-items-center"><svg
+                                                    class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg> <span class="small">10 minutes ago</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item border-0">
+                                    <div class="row ps-lg-1">
+                                        <div class="col-auto">
+                                            <div class="icon-shape icon-xs icon-shape-success rounded"><svg
+                                                    fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg></div>
+                                        </div>
+                                        <div class="col ms-n2 mb-3">
+                                            <h3 class="fs-6 fw-bold mb-1">Product update</h3>
+                                            <p class="mb-0">Spaces - Listings Template has been updated</p>
+                                            <div class="d-flex align-items-center"><svg
+                                                    class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg> <span class="small">4 hours ago</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item border-0">
+                                    <div class="row ps-lg-1">
+                                        <div class="col-auto">
+                                            <div class="icon-shape icon-xs icon-shape-success rounded"><svg
+                                                    fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg></div>
+                                        </div>
+                                        <div class="col ms-n2">
+                                            <h3 class="fs-6 fw-bold mb-1">Product update</h3>
+                                            <p class="mb-0">Volt - Admin Dashboard has been updated</p>
+                                            <div class="d-flex align-items-center"><svg
+                                                    class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg> <span class="small">8 hours ago</span></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

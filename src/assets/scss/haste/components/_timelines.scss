@@ -2,21 +2,28 @@
  * = Timelines
  */
 
+// List group timeline style
 .list-group-timeline {
-    .list-group-item {
-        position: relative;
-        .col-auto{
-            z-index: 999;
-        }
-        &:not(:last-child){
-            &::before {
-                content: '';
-                position: absolute;
-                top: 1rem;
-                left: 2.5rem;
-                height: 100%;
-                border-left: 1px solid $light;
-            }
-        }
+    .list-group-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 4px;
+        height: 100%;
+        border-left: 2px solid #e5e7eb;
+    }
+    
+    .list-group-item::after {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 8px;
+        width: 10px;
+        height: 10px;
+        margin-top: 0.425rem;
+        margin-left: -0.5rem;
+        border: 2px solid #e5e7eb;
+        background: #fff;
+        border-radius: 0.5rem;
     }
 }

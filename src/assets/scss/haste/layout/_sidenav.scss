@@ -3,6 +3,7 @@
 */
 
 .sidebar {
+    background: linear-gradient(to bottom right, $gray-800, $gray-900);
     display: block;
     position: fixed;
     top: 0;
@@ -27,7 +28,8 @@
         &.active {
             & > .nav-link {
                 color: $gray-100;
-                background: linear-gradient(to bottom, $gray-700, $gray-600);
+                background: linear-gradient(to bottom right, $gray-700, $gray-600, $gray-700);
+                backdrop-filter: blur(10px);
                 border-right: 4px solid $secondary;
             }
         }
@@ -140,7 +142,7 @@
 
         @include media-breakpoint-up(md) {
             & + .content {
-                margin-left: 95px;
+                margin-left: 110px;
             }
         }
 
@@ -174,7 +176,7 @@
     @include transition(all 0.3s);
 
     @include media-breakpoint-up(lg) {
-        margin-left: 260px;
+        margin-left: 275px;
     }
 }
 
@@ -205,13 +207,14 @@
         .nav-item {
             .nav-link {
                 &::before {
-                    background-color: $secondary;
+                    background-color: transparent;
+                    border: 2px solid $secondary;
                     border-radius: 50%;
                     content: '';
                     display: inline-block;
-                    height: 7px;
+                    height: 8px;
                     margin: 2px 14px;
-                    width: 7px;
+                    width: 8px;
                 }
             }
         }

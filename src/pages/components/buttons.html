@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <div class="position-fixed bg-primary bg-pattern-1 w-100 fmxh-300 z--1"></div>
     <!-- Sidebar Menu Start -->
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
         <!-- Toggled Logo Start -->
@@ -40,7 +41,7 @@
         <!-- Sidebar Toggler End -->
     </nav>
 
-    <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse simplebar-scrollable-y"
+    <nav id="sidebarMenu" class="sidebar d-lg-block text-white collapse simplebar-scrollable-y m-md-3 rounded shadow"
         data-simplebar>
         <div class="sidebar-inner px-4 pt-3">
             <!-- Mobile Nav Top Start -->
@@ -80,7 +81,7 @@
                         <span class="sidebar-icon d-flex align-items-center">
                             <img src="/vite.svg" height="20" width="20" alt="Vite Logo">
                         </span>
-                        <span class="sidebar-text text-secondary">Haste Dashboard</span>
+                        <span class="sidebar-text text-muted fw-light">Haste Dashboard</span>
                     </a>
                 </li>
                 <!-- Logo End -->
@@ -97,11 +98,11 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
-                        data-bs-target="#submenu-components">
+                    <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components">
                         <span class="d-flex align-items-center">
                             <span class="sidebar-icon d-flex align-items-center">
-                               <i class="bi bi-box"></i>
+                                <i class="bi bi-box"></i>
                             </span>
                             <span class="sidebar-text d-inline-block">Components</span>
                         </span>
@@ -118,6 +119,7 @@
                         <ul class="flex-column nav">
                             <li id="subMenuLink" class="nav-item active">
                                 <a class="nav-link" href="./buttons.html">
+                                    <span class="sidebar-text-contracted">B</span>
                                     <span class="sidebar-text">Buttons</span>
                                 </a>
                             </li>
@@ -145,7 +147,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <span  id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
+                    <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
                         data-bs-toggle="collapse" data-bs-target="#submenu-pages">
                         <span class="d-flex align-items-center">
                             <span class="sidebar-icon d-flex align-items-center">
@@ -171,37 +173,37 @@
                     <div class="multi-level collapse" role="list" id="submenu-pages" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li id="subMenuLink" class="nav-item">
-                                <a class="nav-link" href="./sign-in.html">
+                                <a class="nav-link" href="../examples/sign-in.html">
                                     <span class="sidebar-text">Sign In</span>
                                 </a>
                             </li>
                             <li id="subMenuLink" class="nav-item">
-                                <a class="nav-link" href="./sign-up.html">
+                                <a class="nav-link" href="../examples/sign-up.html">
                                     <span class="sidebar-text">Sign Up</span>
                                 </a>
                             </li>
                             <li id="subMenuLink" class="nav-item">
-                                <a class="nav-link" href="./forgot-password.html">
+                                <a class="nav-link" href="../examples/forgot-password.html">
                                     <span class="sidebar-text">Forgot password</span>
                                 </a>
                             </li>
                             <li id="subMenuLink" class="nav-item">
-                                <a class="nav-link" href="./reset-password.html">
+                                <a class="nav-link" href="../examples/reset-password.html">
                                     <span class="sidebar-text">Reset password</span>
                                 </a>
                             </li>
                             <li id="subMenuLink" class="nav-item">
-                                <a class="nav-link" href="./lock.html">
+                                <a class="nav-link" href="../examples/lock.html">
                                     <span class="sidebar-text">Lock</span>
                                 </a>
                             </li>
                             <li id="subMenuLink" class="nav-item">
-                                <a class="nav-link" href="./404.html">
+                                <a class="nav-link" href="../examples/404.html">
                                     <span class="sidebar-text">404 Not Found</span>
                                 </a>
                             </li>
                             <li id="subMenuLink" class="nav-item">
-                                <a class="nav-link" href="./500.html">
+                                <a class="nav-link" href="../examples/500.html">
                                     <span class="sidebar-text">500 Not Found</span>
                                 </a>
                             </li>
@@ -226,163 +228,149 @@
     <!-- Main Content Start -->
     <main class="content">
         <!-- Topbar Start -->
-        <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark px-3 bg-white mt-3 py-2 mb-4">
+        <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark px-3 bg-white mt-3 py-2 mb-4 shadow">
             <div class="container-fluid px-0">
                 <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
                     <div class="d-flex align-items-center">
                         <!-- Toggle Button -->
                         <button id="sidebar-toggle"
-                            class="sidebar-toggle me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
+                            class="sidebar-toggle bg-gray-100 shadow me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
                             <i class="bi bi-list fs-3"></i>
                         </button>
-                        <!-- Search form Start -->
-                        <form class="navbar-search form-inline" id="navbar-search-main">
-                            <div class="input-group input-group-merge search-bar">
-                                <span class="input-group-text" id="topbar-addon">
-                                    <i class="bi bi-search"></i>
-                                </span>
-                                <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search"
-                                    aria-label="Search" aria-describedby="topbar-addon">
-                            </div>
-                        </form>
-                        <!-- Search form End -->
+                        <!-- Breadcrumb Start -->
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+                                <ol class="breadcrumb bg-gray-100 shadow breadcrumb-dark mb-0">
+                                    <li class="breadcrumb-item">
+                                        <a href="/index.html">
+                                            <i class="bi bi-house-door-fill text-secondary"></i>
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#">Components</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Buttons</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <!-- Breadcrumb End -->
                     </div>
                     <!-- Navbar links -->
                     <!-- Notification Start -->
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark notification-bell unread dropdown-toggle"
-                                data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown"
-                                data-bs-display="static" aria-expanded="false">
-                                <svg class="icon icon-sm text-gray-600" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0">
-                                <div class="list-group list-group-flush">
-                                    <a href="#"
-                                        class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
-                                    <a href="#" class="list-group-item list-group-item-action border-bottom">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <!-- Avatar -->
-                                                <img alt="Image placeholder"
-                                                    src="https://www.gravatar.com/avatar/205e46048aec07710c08d50"
-                                                    class="avatar-md rounded">
-                                            </div>
-                                            <div class="col ps-0 ms-2">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h4 class="h6 mb-0 text-small">Joseph Garth</h4>
-                                                    </div>
-                                                    <div class="text-end">
-                                                        <small>1 d ago</small>
-                                                    </div>
-                                                </div>
-                                                <p class="font-small mt-1 mb-0">New message: "Hey, what's up? All set
-                                                    for the presentation?"</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="list-group-item list-group-item-action border-bottom">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <!-- Avatar -->
-                                                <img alt="Image placeholder"
-                                                    src="https://www.gravatar.com/avatar/205e46048aec07710c08d50"
-                                                    class="avatar-md rounded">
-                                            </div>
-                                            <div class="col ps-0 ms-2">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h4 class="h6 mb-0 text-small">Bonnie Green</h4>
-                                                    </div>
-                                                    <div class="text-end">
-                                                        <small>2 hrs ago</small>
-                                                    </div>
-                                                </div>
-                                                <p class="font-small mt-1 mb-0">New message: "We need to improve the
-                                                    UI/UX for the landing page."</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
-                                        <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                                            <path fill-rule="evenodd"
-                                                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        View all
-                                    </a>
-                                </div>
+                    <div class="d-flex align-items-center">
+                        <!-- Search form Start -->
+                        <form class="navbar-search form-inline d-none d-md-block" id="navbar-search-main">
+                            <div class="input-group input-group-merge search-bar">
+                                <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search"
+                                    aria-label="Search" aria-describedby="topbar-addon">
+                                <span class="input-group-text" id="topbar-addon">
+                                    <i class="bi bi-search"></i>
+                                </span>
                             </div>
-                        </li>
-                        <li class="nav-item dropdown ms-lg-3">
-                            <a class="nav-link dropdown-toggle pt-1 px-0" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="media d-flex align-items-center">
-                                    <img class="avatar rounded-circle" alt="Image placeholder"
-                                        src="https://www.gravatar.com/avatar/205e46048aec07710c08d50">
-                                    <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
-                                        <span class="mb-0 font-small fw-bolder text-gray-900">Administrator</span>
-                                        <span class="text-success">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </form>
+                        <!-- Search form End -->
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark notification-bell unread dropdown-toggle"
+                                    data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown"
+                                    data-bs-display="static" aria-expanded="false">
+                                    <svg class="icon icon-sm text-gray-600" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0">
+                                    <div class="list-group list-group-flush">
+                                        <a href="#"
+                                            class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
+                                        <a href="#" class="list-group-item list-group-item-action border-bottom">
+                                            <div class="row align-items-center justify-content-center">
+                                                1. Design here however you want ;)
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action border-bottom">
+                                            <div class="row align-items-center justify-content-center">
+                                                2. Design here however you want ;)
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
+                                            <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                <path fill-rule="evenodd"
+                                                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                                                    clip-rule="evenodd"></path>
                                             </svg>
-                                        </span>
+                                            View all
+                                        </a>
                                     </div>
                                 </div>
-                            </a>
-                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <i class="bi bi-person-circle fs-5 text-muted me-2"></i>
-                                    My Profile
+                            </li>
+                            <li class="nav-item dropdown ms-lg-3">
+                                <a class="nav-link dropdown-toggle pt-2 px-0 bg-gray-100 px-3 blur-5 rounded shadow"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="media d-flex align-items-center">
+                                        <img class="avatar rounded-circle border-2 border-primary" alt="User Image"
+                                            src="https://www.gravatar.com/avatar/205e46048aec07710c08d50">
+                                        <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
+                                            <span class="mb-0 font-small fw-bolder text-gray-900">Administrator</span>
+                                            <span class="text-success">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-caret-down-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <i class="bi bi-gear fs-5 text-muted me-2"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <i class="bi bi-box-arrow-right fs-5 text-danger me-2"></i>
-                                    Logout
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Notification End -->
+                                <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <i class="bi bi-person-circle fs-5 text-muted me-2"></i>
+                                        My Profile
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <i class="bi bi-gear fs-5 text-muted me-2"></i>
+                                        Settings
+                                    </a>
+                                    <div role="separator" class="dropdown-divider my-1 border-gray-200"></div>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <i class="bi bi-box-arrow-right fs-5 text-danger me-2"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Notification End -->
+                    </div>
                 </div>
             </div>
         </nav>
+        <!-- Topbar End -->
 
         <!-- Page Content Start -->
-        <!-- Breadcrumb Start -->
-        <div class="pb-4">
-            <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
-                <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
-                    <li class="breadcrumb-item">
-                        <a href="/index.html">
-                            <i class="bi bi-house-door-fill text-tertiary"></i>
-                        </a>
-                    </li>
-                    <li class="breadcrumb-item"><a href="#">Components</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Buttons</li>
-                </ol>
-            </nav>
-            <div class="d-flex justify-content-between w-100 flex-wrap">
-                <div class="mb-3 mb-lg-0">
-                    <h1 class="h4">Buttons</h1>
-                    <p class="mb-0">Also you can use every default bootstrap 5 buttons</p>
+        <!-- Page Heading Start -->
+        <div class="row mb-4">
+            <div class="col-12 d-flex justify-content-between align-items-center text-white">
+                <div>
+                    <h2 class="h4">Button Component</h2>
+                    <p class="mb-0">Also you can use everything available in Bootstrap 5.</p>
+                </div>
+                <div>
+                    <a href="" class="btn btn-secondary d-flex align-items-center">
+                        Add Something
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="icon icon-xs ms-2">
+                            <path fill-rule="evenodd"
+                                d="M3.75 3A1.75 1.75 0 002 4.75v10.5c0 .966.784 1.75 1.75 1.75h12.5A1.75 1.75 0 0018 15.25v-8.5A1.75 1.75 0 0016.25 5h-4.836a.25.25 0 01-.177-.073L9.823 3.513A1.75 1.75 0 008.586 3H3.75zM10 8a.75.75 0 01.75.75v1.5h1.5a.75.75 0 010 1.5h-1.5v1.5a.75.75 0 01-1.5 0v-1.5h-1.5a.75.75 0 010-1.5h1.5v-1.5A.75.75 0 0110 8z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- Breadcrumb End -->
+        <!-- Page Heading End -->
         <div class="row">
             <div class="col-12">
                 <div class="card border-light shadow-sm components-section">
