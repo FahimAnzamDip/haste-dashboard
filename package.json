@@ -18,6 +18,8 @@
         "bootstrap": "^5.3.0",
         "chart.js": "^4.3.1",
         "choices.js": "^10.2.0",
-        "simplebar": "^5.3.4"
+        "notyf": "^3.10.0",
+        "simplebar": "^5.3.4",
+        "sweetalert2": "^11.7.20"
     }
 }

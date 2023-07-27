@@ -22,12 +22,15 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    <!-- Chart JS -->
+    <script type="module" src="/assets/js/demos/chart-demo.js"></script>
+
     <!-- Main JS -->
     <script type="module" src="/assets/js/main.js"></script>
 </head>
 
 <body>
-    <div class="position-fixed bg-primary bg-pattern-1 w-100 fmxh-300"></div>
+    <div class="position-fixed bg-primary bg-pattern-1 w-100 fmxh-300 z--1"></div>
     <!-- Sidebar Menu Start -->
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
         <!-- Toggled Logo Start -->
@@ -102,6 +105,48 @@
                         </span>
                         <span class="sidebar-text d-inline-block">Home</span>
                     </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/examples/starter.html" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon d-flex align-items-center">
+                            <i class="bi bi-file"></i>
+                        </span>
+                        <span class="sidebar-text d-inline-block">Starter Page</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-tables">
+                        <span class="d-flex align-items-center">
+                            <span class="sidebar-icon d-flex align-items-center">
+                                <i class="bi bi-table"></i>
+                            </span>
+                            <span class="sidebar-text d-inline-block">Tables</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse" role="list" id="submenu-tables" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/tables/bootstrap-tables.html">
+                                    <span class="sidebar-text-contracted">BT</span>
+                                    <span class="sidebar-text">Bootstrap Tables</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./pages/tables/datatables.html">
+                                    <span class="sidebar-text-contracted">DT</span>
+                                    <span class="sidebar-text">Datatables</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"

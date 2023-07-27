@@ -19,14 +19,14 @@ d.addEventListener('DOMContentLoaded', function (event) {
 
     subMenuLinks.forEach(function (subMenuLink) {
         let parentMultiLevel = subMenuLink.closest('.multi-level.collapse');
-        let arrow =
-            subMenuLink.parentNode.parentNode.parentElement.querySelector(
-                '#hasArrow'
-            );
+        let arrow = subMenuLink.parentNode.parentNode.parentElement.querySelector('#hasArrow');
 
         if (subMenuLink.classList.contains('active')) {
+            let sidebarIcon = arrow.querySelector('.sidebar-icon');
+            sidebarIcon.classList.add('text-secondary');
+
             parentMultiLevel.classList.add('show');
-            
+
             if (arrow.classList.contains('collapsed')) {
                 arrow.classList.remove('collapsed');
             }

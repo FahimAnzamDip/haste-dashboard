@@ -4,6 +4,7 @@ import '../scss/style.scss';
 // Third Party
 import * as bootstrap from 'bootstrap';
 import { Datepicker } from 'vanillajs-datepicker';
+import SimpleBar from 'simplebar';
 
 // Initialize Datepicker
 var datepickers = [].slice.call(document.querySelectorAll('[data-datepicker]'));
@@ -27,12 +28,6 @@ var popoverTriggerList = [].slice.call(
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
     return new bootstrap.Popover(popoverTriggerEl);
 });
-
-import SimpleBar from 'simplebar';
-
-// Demos (Replace with real code for production)
-import './demos/chart-demo.js';
-import './demos/choicejs-demo.js';
 
 // Theme Main
 import './haste/haste.js';

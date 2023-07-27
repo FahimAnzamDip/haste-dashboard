@@ -22,6 +22,12 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="/vite.svg" type="image/x-icon">
 
+    <!-- SweetAlert JS -->
+    <script type="module" src="/assets/js/demos/sweetalert-demo.js"></script>
+
+    <!-- Notyf JS -->
+    <script type="module" src="/assets/js/demos/notyf-demo.js"></script>
+
     <!-- Main JS -->
     <script type="module" src="/assets/js/main.js"></script>
 </head>
@@ -102,6 +108,48 @@
                         </span>
                         <span class="sidebar-text d-inline-block">Home</span>
                     </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../examples/starter.html" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon d-flex align-items-center">
+                            <i class="bi bi-file"></i>
+                        </span>
+                        <span class="sidebar-text d-inline-block">Starter Page</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-tables">
+                        <span class="d-flex align-items-center">
+                            <span class="sidebar-icon d-flex align-items-center">
+                                <i class="bi bi-table"></i>
+                            </span>
+                            <span class="sidebar-text d-inline-block">Tables</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse" role="list" id="submenu-tables" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../tables/bootstrap-tables.html">
+                                    <span class="sidebar-text-contracted">BT</span>
+                                    <span class="sidebar-text">Bootstrap Tables</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../tables/datatables.html">
+                                    <span class="sidebar-text-contracted">DT</span>
+                                    <span class="sidebar-text">Datatables</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
@@ -378,7 +426,56 @@
         <!-- Page Heading End -->
 
         <!-- Page Content Start -->
-        
+        <div class="row" style="margin-bottom: 530px;">
+            <div class="col-12 col-lg-6">
+                <div class="card border-0 shadow">
+                    <div class="card-header border-gray-100 d-flex justify-content-between align-items-center">
+                        <h2 class="h4 mb-0">Sweet alerts</h2>
+                        <a href="https://sweetalert2.github.io/#usage"
+                            class="btn btn-outline-gray-500 d-inline-flex align-items-center">
+                            <svg class="icon icon-xxs me-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Documentation
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-gray-800" id="basicAlert">Basic alert</button>
+                        <button class="btn btn-info" id="infoAlert">Info alert</button>
+                        <button class="btn btn-success" id="successAlert">Success alert</button>
+                        <button class="btn btn-danger" id="dangerAlert">Danger alert</button>
+                        <button class="btn btn-warning" id="warningAlert">Warning alert</button>
+                        <button class="btn btn-gray-200" id="questionAlert">Question</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card border-0 shadow">
+                    <div class="card-header border-gray-100 d-flex justify-content-between align-items-center">
+                        <h2 class="h4 mb-0">Notyf</h2>
+                        <a href="https://github.com/caroso1222/notyf"
+                            class="btn btn-outline-gray-500 d-inline-flex align-items-center">
+                            <svg class="icon icon-xxs me-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Documentation
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-info" id="notifyTopLeft">Top left info</button>
+                        <button class="btn btn-danger" id="notifyTopRight">Top right danger</button>
+                        <button class="btn btn-warning" id="notifyBottomLeft">Bottom left warning</button>
+                        <button class="btn btn-gray-800" id="notifyBottomRight">Primary bottom right</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Page Content End -->
 
         <!-- Footer Start -->
