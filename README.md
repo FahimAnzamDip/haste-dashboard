@@ -12,7 +12,7 @@
 
 > <p>Because it made from the source of volt dashboard you can refer their docs <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/">from here</a> for utilities and helpers because the changes are not drastic by any means. But the biggest change I think is the build tool and the project structure. I used <a href="https://vitejs.dev/">Vite</a> for the build process.</p>
 
-> ### Want to see the demo ? <a href="https://demo.themesberg.com/volt/">click here</a>
+> ### Want to see the demo ? <a href="https://fahimanzamdip.github.io/haste-dashbaord/">click here</a>
 
 <h1>Local Installation</h1>
 
