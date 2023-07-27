@@ -1,0 +1,28 @@
+#datatable_length {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    label {
+        padding-left: 0;
+
+        select[name="datatable_length"] {
+            width: 100px;
+        }
+    }
+}
+
+#datatable_filter {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+#datatable_paginate {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+#datatable_info {
+    padding-left: 0;
+}

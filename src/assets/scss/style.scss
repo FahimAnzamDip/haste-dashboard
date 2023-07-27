@@ -67,8 +67,11 @@
 // Forms
 @import "haste/forms";
 
-// Choices.js CSS
+// Choices.js custom CSS
 @import "custom/choice.js";
+
+// Datatables custom CSS
+@import "custom/datatables.scss";
 
 // write your custom styles here!
 @import "custom/custom.scss";
