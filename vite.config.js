@@ -8,7 +8,7 @@ export default {
             targets: [
                 {
                     src: './pages',
-                    dest: 'pages',
+                    dest: './',
                 },
             ],
         }),
