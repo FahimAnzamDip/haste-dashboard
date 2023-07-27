@@ -1,7 +1,18 @@
 import path from 'node:path';
 import { normalizePath } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default {
+    plugins: [
+        viteStaticCopy({
+            targets: [
+                {
+                    src: './pages',
+                    dest: 'pages',
+                },
+            ],
+        }),
+    ],
     root: normalizePath(path.resolve(__dirname, 'src')),
     build: {
         outDir: '../dist',
@@ -10,5 +21,4 @@ export default {
     server: {
         port: 3030,
     },
-    plugins: [],
 };
