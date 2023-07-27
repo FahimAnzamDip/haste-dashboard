@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Haste Dashboard</title>
+
+    <!-- Meta Tags -->
+    <meta name="title" content="Haste Dashboard - Bootstrap 5 based admin template.">
+    <meta name="author" content="Fahim Anzam Dip">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/vite.svg" type="image/x-icon">
+
+    <!-- Choices JS -->
+    <script type="module" src="/assets/js/demos/choicejs-demo.js"></script>
+
+    <!-- Main JS -->
+    <script type="module" src="/assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="position-fixed bg-primary bg-pattern-1 w-100 fmxh-300 z--1"></div>
+    <!-- Sidebar Menu Start -->
+    <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+        <!-- Toggled Logo Start -->
+        <a class="navbar-brand me-lg-5" href="/index.html">
+            <!-- dark -->
+            <img class="navbar-brand-dark" src="/app-logo.png" alt="Vite logo" />
+            <!-- light -->
+            <img class="navbar-brand-light" src="/app-logo.png" alt="Vite logo" />
+        </a>
+        <!-- Toggled Logo End -->
+        <!-- Siderbar Toggler Start -->
+        <div class="d-flex align-items-center">
+            <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <!-- Sidebar Toggler End -->
+    </nav>
+
+    <nav id="sidebarMenu" class="sidebar d-lg-block text-white collapse simplebar-scrollable-y m-md-3 rounded shadow"
+        data-simplebar>
+        <div class="sidebar-inner px-4 pt-3">
+            <!-- Mobile Nav Top Start -->
+            <div
+                class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
+                <div class="d-flex align-items-center">
+                    <div class="avatar-lg me-4">
+                        <img src="https://www.gravatar.com/avatar/205e46048aec07710c08d50"
+                            class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+                    </div>
+                    <div class="d-block">
+                        <h2 class="h5 mb-3">Hi, Administrator</h2>
+                        <a href="./pages/sign-in.html"
+                            class="btn btn-secondary btn-sm d-inline-flex align-items-center">
+                            <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                                </path>
+                            </svg>
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse-close d-md-none">
+                    <a href="#sidebarMenu" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                        aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+                        <i class="bi bi-x fs-2"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Mobile Nav Top End -->
+            <ul class="nav flex-column pt-3 pt-md-0">
+                <!-- Logo Start -->
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link d-flex align-items-center justify-content-center">
+                        <img class="app-logo" width="100" src="/app-logo.png" alt="App Logo">
+                        <img class="contracted-app-logo" width="50" src="/app-logo.png" alt="App Logo">
+                    </a>
+                </li>
+                <!-- Logo End -->
+
+                <li role="separator" class="dropdown-divider mb-4 border-gray-800 border-4 rounded"></li>
+
+                <!-- Menu Start -->
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon d-flex align-items-center">
+                            <i class="bi bi-bounding-box"></i>
+                        </span>
+                        <span class="sidebar-text d-inline-block">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../examples/starter.html" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon d-flex align-items-center">
+                            <i class="bi bi-file"></i>
+                        </span>
+                        <span class="sidebar-text d-inline-block">Starter Page</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-tables">
+                        <span class="d-flex align-items-center">
+                            <span class="sidebar-icon d-flex align-items-center">
+                                <i class="bi bi-table"></i>
+                            </span>
+                            <span class="sidebar-text d-inline-block">Tables</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse" role="list" id="submenu-tables" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../tables/bootstrap-tables.html">
+                                    <span class="sidebar-text-contracted">BT</span>
+                                    <span class="sidebar-text">Bootstrap Tables</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../tables/datatables.html">
+                                    <span class="sidebar-text-contracted">DT</span>
+                                    <span class="sidebar-text">Datatables</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components">
+                        <span class="d-flex align-items-center">
+                            <span class="sidebar-icon d-flex align-items-center">
+                                <i class="bi bi-box"></i>
+                            </span>
+                            <span class="sidebar-text d-inline-block">Components</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse" role="list" id="submenu-components" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./buttons.html">
+                                    <span class="sidebar-text-contracted">B</span>
+                                    <span class="sidebar-text">Buttons</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./notifications.html">
+                                    <span class="sidebar-text">Notifications</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item active">
+                                <a class="nav-link" href="./forms.html">
+                                    <span class="sidebar-text">Forms</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./modals.html">
+                                    <span class="sidebar-text">Modals</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="./typography.html">
+                                    <span class="sidebar-text">Typography</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span id="hasArrow" class="nav-link collapsed d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-pages">
+                        <span class="d-flex align-items-center">
+                            <span class="sidebar-icon d-flex align-items-center">
+                                <i class="bi bi-file-earmark"></i>
+                            </span>
+                            <span class="sidebar-text d-inline-block">Page examples</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse" role="list" id="submenu-pages" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../examples/sign-in.html">
+                                    <span class="sidebar-text">Sign In</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../examples/sign-up.html">
+                                    <span class="sidebar-text">Sign Up</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../examples/forgot-password.html">
+                                    <span class="sidebar-text">Forgot password</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../examples/reset-password.html">
+                                    <span class="sidebar-text">Reset password</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../examples/lock.html">
+                                    <span class="sidebar-text">Lock</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../examples/404.html">
+                                    <span class="sidebar-text">404 Not Found</span>
+                                </a>
+                            </li>
+                            <li id="subMenuLink" class="nav-item">
+                                <a class="nav-link" href="../examples/500.html">
+                                    <span class="sidebar-text">500 Not Found</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" href="https://icons.getbootstrap.com/"
+                        class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon d-flex align-items-center">
+                            <i class="bi bi-boxes"></i>
+                        </span>
+                        <span class="sidebar-text d-inline-block">Font Icons</span>
+                    </a>
+                </li>
+                <!-- Menu End -->
+            </ul>
+        </div>
+    </nav>
+    <!-- Sidebar Menu End -->
+
+    <!-- Main Content Start -->
+    <main class="content">
+        <!-- Topbar Start -->
+        <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark px-3 bg-white mt-3 py-2 mb-4 shadow">
+            <div class="container-fluid px-0">
+                <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
+                    <div class="d-flex align-items-center">
+                        <!-- Toggle Button -->
+                        <button id="sidebar-toggle"
+                            class="sidebar-toggle bg-gray-100 shadow me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
+                            <i class="bi bi-list fs-3"></i>
+                        </button>
+                        <!-- Breadcrumb Start -->
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+                                <ol class="breadcrumb bg-gray-100 shadow breadcrumb-dark mb-0">
+                                    <li class="breadcrumb-item">
+                                        <a href="/index.html">
+                                            <i class="bi bi-house-door-fill text-secondary"></i>
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#">Components</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Forms</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <!-- Breadcrumb End -->
+                    </div>
+                    <!-- Navbar links -->
+                    <!-- Notification Start -->
+                    <div class="d-flex align-items-center">
+                        <!-- Search form Start -->
+                        <form class="navbar-search form-inline d-none d-md-block" id="navbar-search-main">
+                            <div class="input-group input-group-merge search-bar">
+                                <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search"
+                                    aria-label="Search" aria-describedby="topbar-addon">
+                                <span class="input-group-text" id="topbar-addon">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                            </div>
+                        </form>
+                        <!-- Search form End -->
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark notification-bell unread dropdown-toggle"
+                                    data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown"
+                                    data-bs-display="static" aria-expanded="false">
+                                    <svg class="icon icon-sm text-gray-600" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0">
+                                    <div class="list-group list-group-flush">
+                                        <a href="#"
+                                            class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
+                                        <a href="#" class="list-group-item list-group-item-action border-bottom">
+                                            <div class="row align-items-center justify-content-center">
+                                                1. Design here however you want ;)
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action border-bottom">
+                                            <div class="row align-items-center justify-content-center">
+                                                2. Design here however you want ;)
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
+                                            <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                <path fill-rule="evenodd"
+                                                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            View all
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ms-lg-3">
+                                <a class="nav-link dropdown-toggle pt-2 px-0 bg-gray-100 px-3 blur-5 rounded shadow"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="media d-flex align-items-center">
+                                        <img class="avatar rounded-circle border-2 border-primary" alt="User Image"
+                                            src="https://www.gravatar.com/avatar/205e46048aec07710c08d50">
+                                        <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
+                                            <span class="mb-0 font-small fw-bolder text-gray-900">Administrator</span>
+                                            <span class="text-success">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-caret-down-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <i class="bi bi-person-circle fs-5 text-muted me-2"></i>
+                                        My Profile
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <i class="bi bi-gear fs-5 text-muted me-2"></i>
+                                        Settings
+                                    </a>
+                                    <div role="separator" class="dropdown-divider my-1 border-gray-200"></div>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <i class="bi bi-box-arrow-right fs-5 text-danger me-2"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Notification End -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Topbar End -->
+
+        <!-- Page Heading Start -->
+        <div class="row mb-4">
+            <div class="col-12 d-flex justify-content-between align-items-center text-white">
+                <div>
+                    <h2 class="h4">Form Component</h2>
+                    <p class="mb-0">Also you can use everything available in Bootstrap 5.</p>
+                </div>
+                <div>
+                    <a href="" class="btn btn-secondary d-flex align-items-center">
+                        Add Something
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="icon icon-xs ms-2">
+                            <path fill-rule="evenodd"
+                                d="M3.75 3A1.75 1.75 0 002 4.75v10.5c0 .966.784 1.75 1.75 1.75h12.5A1.75 1.75 0 0018 15.25v-8.5A1.75 1.75 0 0016.25 5h-4.836a.25.25 0 01-.177-.073L9.823 3.513A1.75 1.75 0 008.586 3H3.75zM10 8a.75.75 0 01.75.75v1.5h1.5a.75.75 0 010 1.5h-1.5v1.5a.75.75 0 01-1.5 0v-1.5h-1.5a.75.75 0 010-1.5h1.5v-1.5A.75.75 0 0110 8z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Page Heading End -->
+
+        <!-- Page Content Start -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow components-section">
+                    <div class="card-body">
+                        <div class="row mb-4">
+                            <div class="col-lg-4 col-sm-6">
+                                <!-- Form -->
+                                <div class="mb-4">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone
+                                        else.</small>
+                                </div>
+                                <!-- End of Form -->
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label for="exampleInputIconLeft">Icon Left</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <svg class="icon icon-xs text-gray-600" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="form-control" id="exampleInputIconLeft"
+                                            placeholder="Search" aria-label="Search">
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label for="exampleInputIconRight">Icon Right</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="exampleInputIconRight"
+                                            placeholder="Search" aria-label="Search">
+                                        <span class="input-group-text" id="basic-addon2">
+                                            <svg class="icon icon-xs text-gray-600" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label for="exampleInputIconPassword">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="exampleInputIconPassword"
+                                            placeholder="Password" aria-label="Password">
+                                        <span class="input-group-text" id="basic-addon3">
+                                            <svg class="icon icon-xs text-gray-600" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label for="firstName">First name</label>
+                                    <input type="text" class="form-control is-valid" id="firstName" value="Mark"
+                                        required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+
+                                <!-- Form -->
+                                <div class="my-4">
+                                    <label for="textarea">Example textarea</label>
+                                    <textarea class="form-control" placeholder="Enter your message..." id="textarea"
+                                        rows="4"></textarea>
+                                </div>
+                                <!-- End of Form -->
+                                <!-- Form -->
+                                <div class="mb-4">
+                                    <label for="usernameValidate">Username</label>
+                                    <input type="text" class="form-control is-invalid" id="usernameValidate" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="mb-3">
+                                    <label for="birthday">Birthday</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <svg class="icon icon-xs text-gray-600" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                        <input data-datepicker="" class="form-control" id="birthday" type="text"
+                                            placeholder="dd/mm/yyyy" required autocomplete="off">
+                                    </div>
+                                </div>
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label for="disabledTextInput">Name</label>
+                                    <input type="text" id="disabledTextInput" class="form-control"
+                                        placeholder="Disabled input" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="disabledSelect">Disabled select menu</label>
+                                    <select id="disabledSelect" class="form-control" disabled>
+                                        <option>Disabled select</option>
+                                    </select>
+                                </div>
+                                <!-- End of Form -->
+                                <!-- Form -->
+                                <div class="mb-4">
+                                    <label class="my-1 me-2" for="country">Country</label>
+                                    <select id="choice-js" class="form-select" id="country"
+                                        aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="my-1 mr-2" for="states">Select States</label>
+                                    <select id="choice-js" class="w-100" name="states[]" multiple="multiple">
+                                        <option value="">Search State ...</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="DC">District Of Columbia</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+                                <!-- End of Form -->
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Default file input example</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <!-- End of Form -->
+                            </div>
+                        </div>
+                        <div class="row mb-5 mb-lg-5">
+                            <div class="col-lg-3 col-md-6">
+                                <!-- Checkboxes -->
+                                <div class="mb-3">
+                                    <span class="h6 fw-bold">Checkboxes Round</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                                    <label class="form-check-label" for="defaultCheck10">
+                                        Default checkbox
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck20"
+                                        disabled>
+                                    <label class="form-check-label" for="defaultCheck20">
+                                        Disabled checkbox
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+                                <!-- Radio -->
+                                <fieldset>
+                                    <legend class="h6">Radios</legend>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Default radio
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                            Second default radio
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios3" value="option3" disabled>
+                                        <label class="form-check-label" for="exampleRadios3">
+                                            Disabled radio
+                                        </label>
+                                    </div>
+                                    <!-- End of Radio -->
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+                                <div class="mb-3">
+                                    <span class="h6 fw-bold">Switches</span>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch
+                                        input</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch
+                                        input</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled"
+                                        disabled>
+                                    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch
+                                        input</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled"
+                                        checked disabled>
+                                    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled
+                                        checked switch
+                                        input</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Content End -->
+
+        <!-- Footer Start -->
+        <footer class="bg-white rounded shadow py-3 px-3 mb-3 mt-4">
+            <div class="row">
+                <div class="col-12 d-md-flex justify-content-between">
+                    <div>
+                        <p class="mb-0">© <span class="current-year"></span> - Made with <i
+                                class="bi bi-heart-fill text-danger"></i> by <a
+                                href="https://github.com/FahimAnzamDip">Fahim Anzam Dip</a>
+                        </p>
+                    </div>
+                    <div>
+                        version: <span class="text-tertiary fw-bold">1.0.0</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </main>
+    <!-- Main Content End -->
+</body>
+
+</html>
