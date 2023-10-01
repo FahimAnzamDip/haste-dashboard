@@ -272,179 +272,182 @@
     <!-- Sidebar Menu End -->
 
     <!-- Main Content Start -->
-    <main class="content">
-        <!-- Topbar Start -->
-        <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark px-3 bg-white mt-3 py-2 mb-4 shadow">
-            <div class="container-fluid px-0">
-                <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
-                    <div class="d-flex align-items-center">
-                        <!-- Toggle Button -->
-                        <button id="sidebar-toggle"
-                            class="sidebar-toggle bg-gray-100 shadow me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
-                            <i class="bi bi-list fs-3"></i>
-                        </button>
-                        <!-- Breadcrumb Start -->
+    <main class="content d-flex flex-column justify-content-between vh-100">
+        <div class="upper-section">
+            <!-- Topbar Start -->
+            <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark px-3 bg-white mt-3 py-2 mb-4 shadow">
+                <div class="container-fluid px-0">
+                    <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
                         <div class="d-flex align-items-center">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb bg-gray-100 shadow breadcrumb-dark mb-0">
-                                    <li class="breadcrumb-item">
-                                        <a href="../../index.html">
-                                            <i class="bi bi-house-door-fill text-secondary"></i>
-                                        </a>
-                                    </li>
-                                    <li class="breadcrumb-item active" aria-current="page">Starter Page</li>
-                                </ol>
-                            </nav>
-                        </div>
-                        <!-- Breadcrumb End -->
-                    </div>
-                    <!-- Navbar links -->
-                    <!-- Notification Start -->
-                    <div class="d-flex align-items-center">
-                        <!-- Search form Start -->
-                        <form class="navbar-search form-inline d-none d-md-block" id="navbar-search-main">
-                            <div class="input-group input-group-merge search-bar">
-                                <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search"
-                                    aria-label="Search" aria-describedby="topbar-addon">
-                                <span class="input-group-text" id="topbar-addon">
-                                    <i class="bi bi-search"></i>
-                                </span>
+                            <!-- Toggle Button -->
+                            <button id="sidebar-toggle"
+                                class="sidebar-toggle bg-gray-100 shadow me-3 btn btn-icon-only d-none d-lg-inline-block align-items-center justify-content-center">
+                                <i class="bi bi-list fs-3"></i>
+                            </button>
+                            <!-- Breadcrumb Start -->
+                            <div class="d-flex align-items-center">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb bg-gray-100 shadow breadcrumb-dark mb-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="../../index.html">
+                                                <i class="bi bi-house-door-fill text-secondary"></i>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">Starter Page</li>
+                                    </ol>
+                                </nav>
                             </div>
-                        </form>
-                        <!-- Search form End -->
-                        <ul class="navbar-nav align-items-center">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-dark notification-bell unread dropdown-toggle"
-                                    data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown"
-                                    data-bs-display="static" aria-expanded="false">
-                                    <svg class="icon icon-sm text-gray-600" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0">
-                                    <div class="list-group list-group-flush">
-                                        <a href="#"
-                                            class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
-                                        <a href="#" class="list-group-item list-group-item-action border-bottom">
-                                            <div class="row align-items-center justify-content-center">
-                                                1. Design here however you want ;)
+                            <!-- Breadcrumb End -->
+                        </div>
+                        <!-- Navbar links -->
+                        <!-- Notification Start -->
+                        <div class="d-flex align-items-center">
+                            <!-- Search form Start -->
+                            <form class="navbar-search form-inline d-none d-md-block" id="navbar-search-main">
+                                <div class="input-group input-group-merge search-bar">
+                                    <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search"
+                                        aria-label="Search" aria-describedby="topbar-addon">
+                                    <span class="input-group-text" id="topbar-addon">
+                                        <i class="bi bi-search"></i>
+                                    </span>
+                                </div>
+                            </form>
+                            <!-- Search form End -->
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-dark notification-bell unread dropdown-toggle"
+                                        data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown"
+                                        data-bs-display="static" aria-expanded="false">
+                                        <svg class="icon icon-sm text-gray-600" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0">
+                                        <div class="list-group list-group-flush">
+                                            <a href="#"
+                                                class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
+                                            <a href="#" class="list-group-item list-group-item-action border-bottom">
+                                                <div class="row align-items-center justify-content-center">
+                                                    1. Design here however you want ;)
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action border-bottom">
+                                                <div class="row align-items-center justify-content-center">
+                                                    2. Design here however you want ;)
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
+                                                <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                    <path fill-rule="evenodd"
+                                                        d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                View all
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown ms-lg-3">
+                                    <a class="nav-link dropdown-toggle pt-2 px-0 bg-gray-100 px-3 blur-5 rounded shadow" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="media d-flex align-items-center">
+                                            <img class="avatar rounded-circle border-2 border-primary" alt="User Image"
+                                                src="https://www.gravatar.com/avatar/205e46048aec07710c08d50">
+                                            <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
+                                                <span class="mb-0 font-small fw-bolder text-gray-900">Administrator</span>
+                                                <span class="text-success">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                    </svg>
+                                                </span>
                                             </div>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <i class="bi bi-person-circle fs-5 text-muted me-2"></i>
+                                            My Profile
                                         </a>
-                                        <a href="#" class="list-group-item list-group-item-action border-bottom">
-                                            <div class="row align-items-center justify-content-center">
-                                                2. Design here however you want ;)
-                                            </div>
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <i class="bi bi-gear fs-5 text-muted me-2"></i>
+                                            Settings
                                         </a>
-                                        <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
-                                            <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor"
-                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                                                <path fill-rule="evenodd"
-                                                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                            View all
+                                        <div role="separator" class="dropdown-divider my-1 border-gray-200"></div>
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <i class="bi bi-box-arrow-right fs-5 text-danger me-2"></i>
+                                            Logout
                                         </a>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown ms-lg-3">
-                                <a class="nav-link dropdown-toggle pt-2 px-0 bg-gray-100 px-3 blur-5 rounded shadow"
-                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <div class="media d-flex align-items-center">
-                                        <img class="avatar rounded-circle border-2 border-primary" alt="User Image"
-                                            src="https://www.gravatar.com/avatar/205e46048aec07710c08d50">
-                                        <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
-                                            <span class="mb-0 font-small fw-bolder text-gray-900">Administrator</span>
-                                            <span class="text-success">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down-fill"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        </div>
-                                    </a>
-                                <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
-                                        <i class="bi bi-person-circle fs-5 text-muted me-2"></i>
-                                        My Profile
-                                    </a>
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
-                                        <i class="bi bi-gear fs-5 text-muted me-2"></i>
-                                        Settings
-                                    </a>
-                                    <div role="separator" class="dropdown-divider my-1 border-gray-200"></div>
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
-                                        <i class="bi bi-box-arrow-right fs-5 text-danger me-2"></i>
-                                        Logout
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- Notification End -->
+                                </li>
+                            </ul>
+                            <!-- Notification End -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Topbar End -->
+            
+            <!-- Page Heading Start -->
+            <div class="row mb-4">
+                <div class="col-12 d-flex justify-content-between align-items-center text-white">
+                    <div>
+                        <h2 class="h4">Starter Page</h2>
+                        <p class="mb-0">Add components here as you wish, it's just a starting point.</p>
+                    </div>
+                    <div>
+                        <a href="" class="btn btn-secondary d-flex align-items-center">
+                            Add Something
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="icon icon-xs ms-2">
+                                <path fill-rule="evenodd"
+                                    d="M3.75 3A1.75 1.75 0 002 4.75v10.5c0 .966.784 1.75 1.75 1.75h12.5A1.75 1.75 0 0018 15.25v-8.5A1.75 1.75 0 0016.25 5h-4.836a.25.25 0 01-.177-.073L9.823 3.513A1.75 1.75 0 008.586 3H3.75zM10 8a.75.75 0 01.75.75v1.5h1.5a.75.75 0 010 1.5h-1.5v1.5a.75.75 0 01-1.5 0v-1.5h-1.5a.75.75 0 010-1.5h1.5v-1.5A.75.75 0 0110 8z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
-        </nav>
-        <!-- Topbar End -->
-
-        <!-- Page Heading Start -->
-        <div class="row mb-4">
-            <div class="col-12 d-flex justify-content-between align-items-center text-white">
-                <div>
-                    <h2 class="h4">Starter Page</h2>
-                    <p class="mb-0">Add components here as you wish, it's just a starting point.</p>
-                </div>
-                <div>
-                    <a href="" class="btn btn-secondary d-flex align-items-center">
-                        Add Something
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="icon icon-xs ms-2">
-                            <path fill-rule="evenodd"
-                                d="M3.75 3A1.75 1.75 0 002 4.75v10.5c0 .966.784 1.75 1.75 1.75h12.5A1.75 1.75 0 0018 15.25v-8.5A1.75 1.75 0 0016.25 5h-4.836a.25.25 0 01-.177-.073L9.823 3.513A1.75 1.75 0 008.586 3H3.75zM10 8a.75.75 0 01.75.75v1.5h1.5a.75.75 0 010 1.5h-1.5v1.5a.75.75 0 01-1.5 0v-1.5h-1.5a.75.75 0 010-1.5h1.5v-1.5A.75.75 0 0110 8z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Page Heading End -->
-
-        <!-- Page Content Start -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card shadow border-0" style="height: 665px;">
-                    <div class="card-header"></div>
-                    <div class="card-body"></div>
-                    <div class="card-footer"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Page Content End -->
-
-        <!-- Footer Start -->
-        <footer class="bg-white rounded shadow py-3 px-3 mb-3 mt-4">
+            <!-- Page Heading End -->
+            
+            <!-- Page Content Start -->
             <div class="row">
-                <div class="col-12 d-md-flex justify-content-between">
-                    <div>
-                        <p class="mb-0">© <span class="current-year"></span> - Made with <i
-                                class="bi bi-heart-fill text-danger"></i> by <a
-                                href="https://github.com/FahimAnzamDip">Fahim Anzam Dip</a>
-                        </p>
-                    </div>
-                    <div>
-                        version: <span class="text-tertiary fw-bold">1.0.0</span>
+                <div class="col-md-12">
+                    <div class="card shadow border-0">
+                        <div class="card-header"></div>
+                        <div class="card-body"></div>
+                        <div class="card-footer"></div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Footer End -->
+            <!-- Page Content End -->
+        </div>
+
+        <div class="lower-section">
+            <!-- Footer Start -->
+            <footer class="bg-white rounded shadow py-3 px-3 mb-3 mt-4">
+                <div class="row">
+                    <div class="col-12 d-md-flex justify-content-between">
+                        <div>
+                            <p class="mb-0">© <span class="current-year"></span> - Made with <i
+                                    class="bi bi-heart-fill text-danger"></i> by <a href="https://github.com/FahimAnzamDip">Fahim
+                                    Anzam Dip</a>
+                            </p>
+                        </div>
+                        <div>
+                            version: <span class="text-tertiary fw-bold">1.0.0</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End -->
+        </div>
     </main>
     <!-- Main Content End -->
 </body>
